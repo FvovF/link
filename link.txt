@@ -81,21 +81,41 @@
                 "xudpConcurrency": 8,
                 "xudpProxyUDP443": ""
             },
-            "protocol": "shadowsocks",
+            "protocol": "vless",
             "settings": {
-                "servers": [
+                "vnext": [
                     {
-                        "address": "108.181.126.122",
-                        "level": 1,
-                        "method": "chacha20-ietf-poly1305",
-                        "ota": false,
-                        "password": "CJmTCCx7Ltud",
-                        "port": 8388
+                        "address": "146.185.209.234",
+                        "port": 443,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "50b95deb-6394-46c5-b88a-583e5b3ca7ee",
+                                "level": 8,
+                                "security": "auto"
+                            }
+                        ]
                     }
                 ]
             },
             "streamSettings": {
-                "network": "tcp"
+                "network": "tcp",
+                "realitySettings": {
+                    "allowInsecure": false,
+                    "fingerprint": "chrome",
+                    "publicKey": "PGccrEdFmBaB1rQFJqM-a9jJ1pFsxhUP2sD9KTw5Oz4",
+                    "serverName": "ads.x5.ru",
+                    "shortId": "f69d7af2d5fc5e0c",
+                    "show": false,
+                    "spiderX": "/"
+                },
+                "security": "reality",
+                "tcpSettings": {
+                    "header": {
+                        "type": "none"
+                    }
+                }
             },
             "tag": "proxy"
         },
@@ -136,7 +156,7 @@
             "statsOutboundUplink": true
         }
     },
-    "remarks": "🇳🇱 11.++The+Netherlands",
+    "remarks": "🇩🇪 Германия #2",
     "routing": {
         "domainStrategy": "IPIfNonMatch",
         "rules": [
